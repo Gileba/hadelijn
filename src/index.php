@@ -32,7 +32,7 @@
 	<body class="<?php echo $pageclass ? htmlspecialchars($pageclass) : 'default'; ?>">
 		<div class="container">
 			<div class="content">
-				<div class="logo"><img src="/templates/tpl_hadelijn/images/logo.jpg" alt="<?php echo $sitename ?>" /></div>
+				<div class="logo"><img src="/templates/hadelijn/images/logo.jpg" alt="<?php echo $sitename ?>" /></div>
 				<jdoc:include type="message" />
 				<div class="component"><jdoc:include type="component" /></div>
 			</div>
