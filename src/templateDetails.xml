@@ -15,4 +15,7 @@
 		<filename>templateDetails.xml</filename>
 		<folder>images</folder>
 	</files>
+	<positions>
+		<position>left</position>
+	</positions>
 </extension>

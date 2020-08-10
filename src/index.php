@@ -34,7 +34,10 @@
 			<div class="content">
 				<div class="logo"><img src="/templates/hadelijn/images/logo.jpg" alt="<?php echo $sitename ?>" /></div>
 				<jdoc:include type="message" />
-				<div class="component"><jdoc:include type="component" /></div>
+				<div class="main">
+					<div class="left"><jdoc:include type="modules" name="left" /></div></div>
+					<div class="component"><jdoc:include type="component" /></div>
+				</div>
 			</div>
 		</div>
 	</body>
