@@ -2,7 +2,32 @@
 	display: flex;
 
 	.left {
-		flex-basis: 25%;
-		width: 25%;
+		flex-shrink: 1;
+		min-width: 100px;
+		transition: min-width 0.5s;
+		@media screen and (min-width: 800px) {
+			min-width: 200px;
+		}
+
+		&.wide {
+			min-width: 185px;
+			overflow: hidden;
+		}
+	}
+
+	.component {
+		background-image: url("../images/kantlijn.jpg");
+		background-repeat: repeat-y;
+		padding-left: 100px;
+		padding-right: 20px;
+		min-height: ~"calc(100vh - 170px)";
+		margin-top: 160px;
+		width: 100%;
+
+		@media screen and (max-width: 800px) {
+			background-image: url("../images/kantlijn_mobile.jpg");
+			padding-left: 20px;
+			margin-top: 100px;
+		}
 	}
 }

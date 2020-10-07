@@ -1,0 +1,22 @@
+.offcanvas {
+	display: none;
+	position: absolute;
+	top: 20px;
+	z-index: 2;
+
+	@media screen and (max-width: 800px) {
+		display: block;
+	}
+
+	.nav.mobilemenu:not(.hamburger) {
+		left: -200px;
+		transition: left 0.5s;
+		top: 120px;
+		display: block;
+
+		&.open {
+			left: -5px;
+			display: block;
+		}
+	}
+}

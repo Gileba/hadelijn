@@ -1,0 +1,152 @@
+.upload {
+	display: none;
+}
+
+.eventgallery-back-button {
+	display: none;
+}
+
+.eventgallery-squares.thumbnails {
+	.eventgallery-mixin();
+}
+
+.eventgallery-events-imagelist.thumbnails {
+	.eventgallery-mixin();
+}
+
+.eventgallery-thumbnails.thumbnails {
+	.eventgallery-mixin();
+}
+
+.eventgallery-mixin {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	.thumbnail-container {
+		float: none;
+		min-width: 250px;
+		padding: 10px;
+
+		.event-thumbnails {
+			width: 100%;
+		}
+
+		.event-thumbnail {
+			width: 100%;
+
+			img {
+				width: 100% !important;
+				height: 100% !important;
+			}
+		}
+	}
+}
+
+.plg-eventgallery-event {
+	margin: auto;
+	width: min-content;
+
+	.thumbnails {
+		display: flex;
+		overflow: auto;
+		width: ~"calc(206px * 5)";
+
+		@media screen and (max-width: 1340px) {
+			width: ~"calc(206px * 4)";
+		}
+
+		@media screen and (max-width: 1140px) {
+			width: ~"calc(206px * 3)";
+		}
+
+		@media screen and (max-width: 940px) {
+			width: ~"calc(206px * 2)";
+		}
+
+		@media screen and (max-width: 640px) {
+			width: ~"calc(206px * 1)";
+		}
+	}
+}
+
+.eventgallery-module {
+	margin: auto;
+	width: min-content;
+
+	#events {
+		display: flex;
+		width: ~"calc(206px * 5)";
+
+		@media screen and (max-width: 1340px) {
+			width: ~"calc(206px * 4)";
+		}
+
+		@media screen and (max-width: 1140px) {
+			width: ~"calc(206px * 3)";
+		}
+
+		@media screen and (max-width: 940px) {
+			width: ~"calc(206px * 2)";
+		}
+
+		@media screen and (max-width: 640px) {
+			width: ~"calc(206px * 1)";
+		}
+
+		.eventgallery-events-gridlist {
+			.item-container {
+				width: 206px;
+
+				.item {
+					.unset-boxshadow();
+
+					.eventthumbnails {
+						.event-thumbnail {
+							img {
+								width: 206px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.component {
+	.ui.form {
+		font-size: revert;
+
+		.field {
+			display: grid;
+			grid-template-columns: 100px auto;
+
+			input,
+			textarea {
+				max-width: 500px;
+			}
+
+			.error-msg {
+				padding-left: 100px;
+				grid-column-start: span 2;
+			}
+		}
+	}
+
+	.ui.message {
+		ul.list li:before {
+			display: none;
+		}
+	}
+
+	div[data-vtype="html_code"] {
+		margin-bottom: 30px;
+	}
+}
+
+.unset-boxshadow {
+	-webkit-box-shadow: unset;
+	-moz-box-shadow: unset;
+	box-shadow: unset;
+}

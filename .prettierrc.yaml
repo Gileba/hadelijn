@@ -1,0 +1,4 @@
+# .prettierrc or .prettierrc.yaml
+printWidth: 120
+useTabs: true
+tabWidth: 4

@@ -17,5 +17,6 @@
 	</files>
 	<positions>
 		<position>left</position>
+		<position>offcanvas</position>
 	</positions>
 </extension>
