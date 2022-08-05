@@ -1,14 +1,15 @@
 <?php
 	defined('_JEXEC') or die('Restricted access');
 
+	use Joomla\CMS\Factory;
+
 	/** @var JDocumentHtml $this */
-	$app      	= JFactory::getApplication();
+	$app 		= Factory::getApplication();
+	$menu 		= $app->getMenu();
+	$pageclass 	= $menu->getActive()->getParams(true)->get('pageclass_sfx');
 
 	/** Output as HTML5 */
 	$this->setHtml5(true);
-
-	$menu 		= $app->getMenu();
-	$pageclass 	= $menu->getActive()->getParams(true)->get('pageclass_sfx');
 
 	// Logo file or site title param
 	$sitename = htmlspecialchars($app->get('sitename'), ENT_QUOTES, 'UTF-8');
