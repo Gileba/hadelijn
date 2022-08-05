@@ -1,17 +1,15 @@
 <?php
 	defined('_JEXEC') or die('Restricted access');
 
+	use Joomla\CMS\Factory;
+
 	/** @var JDocumentHtml $this */
-	$app      	= JFactory::getApplication();
-	$doc      	= JFactory::getDocument();
+	$app 		= Factory::getApplication();
+	$menu 		= $app->getMenu();
+	$pageclass 	= $menu->getActive()->getParams(true)->get('pageclass_sfx');
 
 	/** Output as HTML5 */
 	$this->setHtml5(true);
-
-	$menu 		= $app->getMenu();
-	$params		= $app->getTemplate(true)->params;
-	$config 	= JFactory::getConfig();
-	$pageclass 	= $menu->getActive()->getParams(true)->get('pageclass_sfx');
 
 	// Logo file or site title param
 	$sitename = htmlspecialchars($app->get('sitename'), ENT_QUOTES, 'UTF-8');
@@ -19,7 +17,7 @@
 ?>
 
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" 
+<html xmlns="http://www.w3.org/1999/xhtml"
    xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" >
    <head>
 		<jdoc:include type="head" />
@@ -54,7 +52,7 @@
 				<jdoc:include type="message" />
 				<div class="main">
 					<div class="left">
-						<jdoc:include type="modules" name="left" />
+						<jdoc:include type="modules" name="left" style="html5" />
 					</div>
 					<div class="component"><jdoc:include type="component" /></div>
 				</div>
