@@ -19,7 +19,7 @@
 ?>
 
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" 
+<html xmlns="http://www.w3.org/1999/xhtml"
    xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" >
    <head>
 		<jdoc:include type="head" />
@@ -54,7 +54,7 @@
 				<jdoc:include type="message" />
 				<div class="main">
 					<div class="left">
-						<jdoc:include type="modules" name="left" />
+						<jdoc:include type="modules" name="left" style="html5" />
 					</div>
 					<div class="component"><jdoc:include type="component" /></div>
 				</div>
