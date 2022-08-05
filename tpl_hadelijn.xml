@@ -5,15 +5,31 @@
 		<description>Hadelijn.be Template (Package)</description>
 		<element>hadelijn</element>
 		<type>package</type>
-		<version>1.0.0</version>
-		<infourl title="Hadelijn.be Template Package">https://github.com/Gileba/hadelijn/releases/tag/1.0.0</infourl>
+		<version>1.1.0</version>
+		<infourl title="Hadelijn.be Template Package">https://github.com/Gileba/hadelijn/releases/tag/1.1.0</infourl>
 		<downloads>
-			<downloadurl type="full" format="zip">https://github.com/Gileba/hadelijn/releases/download/1.0.0/pkg_hadelijn.zip</downloadurl>
+			<downloadurl type="full" format="zip">https://github.com/Gileba/hadelijn/releases/download/1.1.0/pkg_hadelijn.zip</downloadurl>
 		</downloads>
 		<tags>
 			<tag>stable</tag>
 		</tags>
-		<targetplatform name="joomla" version="3.[9]"/>
+		<targetplatform name="joomla" version="3.[9]|10"/>
+		<client>0</client>
+	</update>
+	<update>
+		<name>Hadelijn.be Template (Package)</name>
+		<description>Hadelijn.be Template (Package)</description>
+		<element>hadelijn</element>
+		<type>package</type>
+		<version>1.1.0</version>
+		<infourl title="Hadelijn.be Template Package">https://github.com/Gileba/hadelijn/releases/tag/1.1.0</infourl>
+		<downloads>
+			<downloadurl type="full" format="zip">https://github.com/Gileba/hadelijn/releases/download/1.1.0/pkg_hadelijn.zip</downloadurl>
+		</downloads>
+		<tags>
+			<tag>stable</tag>
+		</tags>
+		<targetplatform name="joomla" version="4.[0123456789]"/>
 		<client>0</client>
 	</update>
 </updates>
