@@ -11,7 +11,6 @@ defined('_JEXEC') or die;
 
 /** @var JDocumentHtml $this */
 
-$twofactormethods = JAuthenticationHelper::getTwoFactorMethods();
 $app              = JFactory::getApplication();
 
 // Output as HTML5
@@ -62,12 +61,6 @@ $sitename = htmlspecialchars($app->get('sitename'), ENT_QUOTES, 'UTF-8');
 
 						<label for="password"><?php echo JText::_('JGLOBAL_PASSWORD'); ?></label>
 						<input type="password" name="password" id="password" title="<?php echo JText::_('JGLOBAL_PASSWORD'); ?>" />
-
-						<?php if (count($twofactormethods) > 1) : ?>
-						<label for="secretkey"><?php echo JText::_('JGLOBAL_SECRETKEY'); ?></label>
-						<input type="text" name="secretkey" autocomplete="one-time-code" id="secretkey"
-							title="<?php echo JText::_('JGLOBAL_SECRETKEY'); ?>" />
-						<?php endif; ?>
 
 						<input type="submit" name="Submit" class="btn btn-primary" value="<?php echo JText::_('JLOGIN'); ?>" />
 
