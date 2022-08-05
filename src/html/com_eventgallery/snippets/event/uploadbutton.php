@@ -30,7 +30,7 @@ $encodedReturnUrl = base64_encode($uri->toString(array('scheme', 'host', 'port',
 if ($frontediting && $eventEditing && $folder->supportsFileUpload()) {
     ?>
     <div class="upload">
-        <a class="btn" 
+        <a class="btn btn-primary"
         href="<?php echo JRoute::_('index.php?option=com_eventgallery&view=upload&return='.$encodedReturnUrl.'&folderid='.$folder->getId());?>">
           <?php echo JText::_("COM_EVENTGALLERY_EVENT_UPLOAD_BUTTON")?>
         </a>

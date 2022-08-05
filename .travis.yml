@@ -34,4 +34,4 @@ deploy:
   on:
     tags: true
   token: $GITHUB_TOKEN
-after_deploy: curl -T tpl_hadelijn/tpl_hadelijn.xml -u $FTP_USER:$FTP_PASSWORD $FTP_SERVER
+after_deploy: curl -T hadelijn/tpl_hadelijn.xml -u $FTP_USER:$FTP_PASSWORD $FTP_SERVER
