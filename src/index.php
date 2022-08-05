@@ -3,14 +3,11 @@
 
 	/** @var JDocumentHtml $this */
 	$app      	= JFactory::getApplication();
-	$doc      	= JFactory::getDocument();
 
 	/** Output as HTML5 */
 	$this->setHtml5(true);
 
 	$menu 		= $app->getMenu();
-	$params		= $app->getTemplate(true)->params;
-	$config 	= JFactory::getConfig();
 	$pageclass 	= $menu->getActive()->getParams(true)->get('pageclass_sfx');
 
 	// Logo file or site title param
