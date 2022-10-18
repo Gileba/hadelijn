@@ -49,12 +49,17 @@
 			<div class="content">
 				<div class="logo"><img src="/templates/hadelijn/images/logo.jpg" alt="<?php echo $sitename ?>" /></div>
 				<div class="offcanvas"><jdoc:include type="modules" name="offcanvas" /></div>
-				<jdoc:include type="message" />
 				<div class="main">
 					<div class="left">
 						<jdoc:include type="modules" name="left" style="html5" />
 					</div>
-					<div class="component"><jdoc:include type="component" /></div>
+					<div class="component">
+						<div class="messages">
+							<jdoc:include type="message" />
+							<jdoc:include type="modules" name="messages" style="html5" />
+						<div>
+						<jdoc:include type="component" />
+					</div>
 				</div>
 			</div>
 		</div>
