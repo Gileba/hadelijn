@@ -16,6 +16,7 @@
 		<folder>images</folder>
 	</files>
 	<positions>
+		<position>messages</position>
 		<position>left</position>
 		<position>offcanvas</position>
 	</positions>
